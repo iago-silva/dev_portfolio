@@ -7,12 +7,12 @@ import Contact from "./components/contact/contact";
 // Importando os components necessárias da lib react-materialize
 import { Container } from 'react-materialize';
 // Importanto o component <Switch /> e <Route /> da nossa Lib de rotas
+// Esse Switch procura quem tem a rota atual e a seleciona
 import { Switch, Route } from 'react-router-dom'
 
 const Main = () => (
   <main>
     <Container>
-      // Esse Switch procura quem tem a rota atual e a seleciona
       <Switch>
         <Route exact path='/' component={Home}/>
         <Route path='/contact' component={Contact}/>
